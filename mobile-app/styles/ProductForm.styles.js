@@ -1,0 +1,47 @@
+import { StyleSheet } from 'react-native';
+
+export const makeStyles = (c) =>
+  StyleSheet.create({
+    screen: { flex: 1, backgroundColor: c.bg },
+    headerBar: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      paddingHorizontal: 20,
+      paddingTop: 50,
+      paddingBottom: 14,
+      backgroundColor: c.card,
+      borderBottomWidth: 1,
+      borderBottomColor: c.border,
+    },
+    title: { fontSize: 20, fontWeight: '800', color: c.text },
+    close: { fontSize: 22, color: c.textSecondary, fontWeight: '700' },
+    content: { padding: 20, paddingBottom: 40 },
+    label: { fontSize: 13, fontWeight: '600', color: c.textSecondary, marginBottom: 6, marginTop: 10 },
+    input: {
+      borderWidth: 1,
+      borderColor: c.border,
+      borderRadius: 10,
+      padding: 12,
+      fontSize: 15,
+      backgroundColor: c.inputBg,
+      color: c.text,
+    },
+    imageButton: {
+      borderWidth: 1,
+      borderColor: c.accent,
+      borderStyle: 'dashed',
+      borderRadius: 10,
+      paddingVertical: 14,
+      alignItems: 'center',
+      backgroundColor: c.accentSoft,
+    },
+    imageButtonText: { color: c.accent, fontWeight: '700' },
+    preview: { width: '100%', height: 160, borderRadius: 10, marginTop: 10 },
+    errorText: { color: c.danger, fontSize: 13, marginTop: 4 },
+    actions: { flexDirection: 'row', gap: 12, marginTop: 20 },
+    button: { backgroundColor: c.accent, borderRadius: 12, paddingVertical: 14, alignItems: 'center', flex: 1 },
+    buttonText: { color: '#fff', fontWeight: '700', fontSize: 15 },
+    cancelButton: { borderWidth: 1.5, borderColor: c.border, borderRadius: 12, paddingVertical: 14, alignItems: 'center', flex: 1 },
+    cancelText: { color: c.textSecondary, fontWeight: '700', fontSize: 15 },
+  });
