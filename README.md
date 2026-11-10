@@ -1,4 +1,4 @@
-# Wolt-Style Food Delivery App — Ex5
+# Wolt-Style Food Delivery App
 
 A full-stack Wolt-inspired food delivery system with **two clients** — a **React** web app and a **React Native (Expo Router)** mobile app — backed by a **Node.js/Express** server with **MongoDB (Mongoose)**, plus a **C++ recommendation server**. Both clients talk to the same server and share the same database.
 
